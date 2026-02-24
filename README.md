@@ -48,16 +48,10 @@ We compared DCCRN against LS and LMMSE baselines.
 * **LMMSE**: High accuracy but computationally heavy.
 * **DCCRN (Pruned+FP16)**: **Matches LMMSE accuracy** while being extremely lightweight.
 
-> ![BER Comparison](result_images/ber_comparison.png)
-> *(Please replace `result_images/ber_comparison.png` with your actual plot file path)*
-
 ### 2. Throughput & Latency (Speed)
 We tested the "Average Latency Per User" under batch processing (Batch=4).
 * **LMMSE (CPU)**: ~55~65ms per user (Sequential bottleneck).
 * **DCCRN (GPU)**: **< 1ms per user** (Parallelization advantage).
-
-> ![Speed Comparison](result_images/speed_comparison.png)
-> *(Please replace `result_images/speed_comparison.png` with your actual plot file path)*
 
 ### 3. Compression Analysis (Storage)
 By applying **85% Unstructured Pruning** and saving with standard compression (ZIP), we proved effective storage reduction.
@@ -105,6 +99,7 @@ pip install torch numpy matplotlib tqdm
 ### 2. 執行 (Run)
 
 Please use /code/main.ipynb to run.
+
 
 
 
